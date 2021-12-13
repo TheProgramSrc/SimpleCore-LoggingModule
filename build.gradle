@@ -1,0 +1,121 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.0'
+    id 'maven-publish'
+    id 'com.github.johnrengelman.shadow' version '7.1.0'
+    id 'com.dorongold.task-tree' version '2.1.0'
+}
+
+group 'xyz.theprogramsrc'
+version '0.1.0-SNAPSHOT'
+description 'Just a logger for the SimpleCore API'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.theprogramsrc.xyz/repository/maven-snapshots/' }
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    maven { url 'https://oss.sonatype.org/content/repositories/releases/' }
+    maven { url 'https://oss.sonatype.org/content/groups/public/' }
+}
+
+dependencies {
+    compileOnly 'org.jetbrains.kotlin:kotlin-stdlib:1.6.0'
+    compileOnly 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
+    compileOnly 'net.md-5:bungeecord-api:1.17-R0.1-SNAPSHOT'
+    compileOnly 'xyz.theprogramsrc:simplecoreapi:0.0.1.1-SNAPSHOT'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+}
+
+shadowJar {
+    archiveBaseName.set('LoggingModule')
+    archiveClassifier.set('')
+}
+
+test {
+    useJUnitPlatform()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+    withJavadocJar()
+    withSourcesJar()
+}
+
+processResources {
+    filter ReplaceTokens, tokens: [name: rootProject.name, version: project.version.toString(), description: project.description]
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(Javadoc) {
+    failOnError false
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
+}
+
+tasks.withType(Copy) {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    exclude 'META-INF/**'
+}
+
+tasks.withType(Jar) {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    exclude 'META-INF/**'
+}
+
+configurations {
+    testImplementation {
+        extendsFrom(compileOnly)
+    }
+}
+
+sourceSets {
+    main.kotlin.srcDirs += 'src/main/kotlin'
+    main.resources.srcDirs += 'src/main/resources'
+}
+
+publishing {
+    repositories {
+        maven {
+            name = 'TheProgramSrcRepository'
+            credentials.username = System.getenv('NEXUS_USERNAME')
+            credentials.password = System.getenv('NEXUS_PASSWORD')
+            url = uri(version.contains('-SNAPSHOT') ? 'https://repo.theprogramsrc.xyz/repository/maven-snapshots/' : 'https://repo.theprogramsrc.xyz/repository/maven-releases/')
+        }
+//        maven {
+//            name = 'GitHubPackages'
+//            url = 'https://maven.pkg.github.com/TheProgramSrc/SimpleCore-LoggingModule'
+//            credentials {
+//                username = System.getenv('GITHUB_ACTOR')
+//                password = System.getenv('GITHUB_TOKEN')
+//            }
+//        }
+    }
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId = 'loggingmodule'
+
+            from components.java
+
+            pom.withXml {
+                asNode().appendNode('packaging', 'jar')
+                asNode().remove(asNode().get('dependencies'))
+            }
+        }
+    }
+}
+
+javadoc {
+    if(JavaVersion.current().isJava9Compatible()) {
+        options.addBooleanOption('html5', true)
+    }
+}
+
+publish.dependsOn clean, test, jar, shadowJar
