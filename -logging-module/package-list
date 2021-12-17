@@ -1,0 +1,15 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:xyz.theprogramsrc.loggingmodule////PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/Logger///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/Logger/Logger/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/-logger.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/Logger/fine/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/fine.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/Logger/finer/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/finer.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/Logger/finest/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/finest.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/Logger/info/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/info.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/Logger/severe/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/severe.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/Logger/warning/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/warning.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/Main///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-main/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/Main/Main/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-main/-main.html
+xyz.theprogramsrc.loggingmodule
+
