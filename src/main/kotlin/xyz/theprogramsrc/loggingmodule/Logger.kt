@@ -1,10 +1,10 @@
 package xyz.theprogramsrc.loggingmodule
 
+import xyz.theprogramsrc.simplecoreapi.libs.zip4j.ZipFile
 import java.io.File
-import java.time.Instant
+import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.logging.Level
-import xyz.theprogramsrc.simplecoreapi.libs.zip4j.ZipFile
 
 class Logger(name: String) {
 
@@ -17,17 +17,17 @@ class Logger(name: String) {
         if(!logsFolder.exists()) logsFolder.mkdirs()
         logFile = File("logs/$name/latest.log")
         if(logFile.exists()){
-            val date = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH.mm.ss.SSS").format(Instant.now())
-            val zip = ZipFile(File("logs/$name/$date.zip"))
-//            zip.addFile(logFile)
-            logFile.delete()
+            ZipFile(File("logs/$name/${DateTimeFormatter.ofPattern("yyyy-MM-dd_HH.mm.ss.SSS").format(LocalDateTime.now())}.zip")).use {
+                it.addFile(logFile)
+                logFile.delete()
+            }
         }
 
         logFile.createNewFile()
     }
 
     private fun writeToFile(level: Level, message: String){
-        val now = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS").format(Instant.now())
+        val now = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS").format(LocalDateTime.now())
         logFile.appendText("[$now] [${level.name}] $message\n")
     }
 
