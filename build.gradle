@@ -105,7 +105,7 @@ publishing {
 
             pom.withXml {
                 asNode().appendNode('packaging', 'jar')
-                if(asNode().get('dependencies') != null){
+                if(asNode().get('dependencies')[0] != null){
                     asNode().remove(asNode().get('dependencies')[0])
                 }
             }
