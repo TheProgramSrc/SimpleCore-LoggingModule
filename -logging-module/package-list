@@ -1,5 +1,20 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter////PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/FilterResult.DENY///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-filter-result/-d-e-n-y/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/FilterResult.NEUTRAL///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-filter-result/-n-e-u-t-r-a-l/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/FilterResult.NONE///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-filter-result/-n-o-n-e/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/FilterResult///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-filter-result/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/LogFilter/#xyz.theprogramsrc.loggingmodule.filter.FilterResult#kotlin.Array[kotlin.String]/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/-log-filter.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/extraRequirements/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/extra-requirements.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/filter/#org.apache.logging.log4j.core.LogEvent?/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/filter.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/filter/#org.apache.logging.log4j.core.Logger?#org.apache.logging.log4j.Level?#org.apache.logging.log4j.Marker?#kotlin.Any#kotlin.Throwable?/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/filter.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/filter/#org.apache.logging.log4j.core.Logger?#org.apache.logging.log4j.Level?#org.apache.logging.log4j.Marker?#kotlin.String?#kotlin.Array[kotlin.Any?]/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/filter.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/filter/#org.apache.logging.log4j.core.Logger?#org.apache.logging.log4j.Level?#org.apache.logging.log4j.Marker?#org.apache.logging.log4j.message.Message#kotlin.Throwable?/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/filter.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/filteredStrings/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/filtered-strings.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/register/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/register.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/result/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/result.html
 $dokka.location:xyz.theprogramsrc.loggingmodule////PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/index.html
 $dokka.location:xyz.theprogramsrc.loggingmodule/Logger///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/index.html
 $dokka.location:xyz.theprogramsrc.loggingmodule/Logger/Logger/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/-logger.html
@@ -12,4 +27,5 @@ $dokka.location:xyz.theprogramsrc.loggingmodule/Logger/warning/#kotlin.String/Po
 $dokka.location:xyz.theprogramsrc.loggingmodule/Main///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-main/index.html
 $dokka.location:xyz.theprogramsrc.loggingmodule/Main/Main/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-main/-main.html
 xyz.theprogramsrc.loggingmodule
+xyz.theprogramsrc.loggingmodule.filter
 
