@@ -7,7 +7,7 @@ plugins {
     id 'org.jetbrains.dokka' version '1.6.0'
 }
 
-def projectVersion = (System.getenv("VERSION") ?: '0.1.0-SNAPSHOT').replaceFirst("v", "").replace('/', '')
+def projectVersion = (System.getenv("VERSION") ?: '0.2.0-SNAPSHOT').replaceFirst("v", "").replace('/', '')
 
 group 'xyz.theprogramsrc'
 version projectVersion
@@ -16,11 +16,15 @@ description 'Just a logger for the SimpleCore API'
 repositories {
     mavenLocal()
     mavenCentral()
+
     maven { url 'https://repo.theprogramsrc.xyz/repository/maven-public/' }
-    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
     maven { url 'https://oss.sonatype.org/content/repositories/releases/' }
     maven { url 'https://oss.sonatype.org/content/groups/public/' }
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url 'https://repo.codemc.org/repository/maven-public' }
+    maven { url 'https://repo.codemc.org/repository/nms' }
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -28,6 +32,9 @@ dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
     compileOnly 'net.md-5:bungeecord-api:1.17-R0.1-SNAPSHOT'
     compileOnly 'xyz.theprogramsrc:simplecoreapi:0.1.8-SNAPSHOT'
+
+    compileOnly 'org.apache.logging.log4j:log4j-api:2.17.0'
+    compileOnly 'org.apache.logging.log4j:log4j-core:2.17.0'
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
 }
@@ -67,10 +74,6 @@ tasks.withType(Jar) {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
-test {
-    useJUnitPlatform()
-}
-
 configurations {
     testImplementation {
         extendsFrom(compileOnly)
@@ -102,9 +105,7 @@ publishing {
 
             pom.withXml {
                 asNode().appendNode('packaging', 'jar')
-                if(asNode().get('dependencies')[0] != null){
-                    asNode().remove(asNode().get('dependencies')[0])
-                }
+                asNode().remove(asNode().get('dependencies')[0])
             }
         }
     }
