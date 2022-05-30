@@ -1,13 +1,13 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+    id 'org.jetbrains.kotlin.jvm' version '1.6.21'
     id 'maven-publish'
     id 'com.github.johnrengelman.shadow' version '7.1.2'
-    id 'org.jetbrains.dokka' version '1.6.0'
+    id 'org.jetbrains.dokka' version '1.6.21'
 }
 
-def projectVersion = (System.getenv("VERSION") ?: '0.2.1-SNAPSHOT').replaceFirst("v", "").replace('/', '')
+def projectVersion = (System.getenv("VERSION") ?: '0.2.2-SNAPSHOT').replaceFirst("v", "").replace('/', '')
 
 group 'xyz.theprogramsrc'
 version projectVersion
@@ -26,13 +26,13 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.jetbrains.kotlin:kotlin-stdlib:1.6.10'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.6.21'
     compileOnly 'org.spigotmc:spigot-api:1.18.1-R0.1-SNAPSHOT'
     compileOnly 'net.md-5:bungeecord-api:1.18-R0.1-SNAPSHOT'
-    compileOnly 'xyz.theprogramsrc:simplecoreapi:0.1.12-SNAPSHOT'
+    compileOnly 'xyz.theprogramsrc:simplecoreapi:0.3.5-SNAPSHOT'
 
-    compileOnly 'org.apache.logging.log4j:log4j-api:2.17.1'
-    compileOnly 'org.apache.logging.log4j:log4j-core:2.17.1'
+    compileOnly 'org.apache.logging.log4j:log4j-api:2.17.2'
+    compileOnly 'org.apache.logging.log4j:log4j-core:2.17.2'
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
 }

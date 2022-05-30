@@ -1,3 +1,7 @@
+## v0.2.2 - Snapshot
+* Added `Logger#debug` method
+* Added `Logger#severe(String, Exception)` method
+
 ## v0.2.1 - Snapshot
 * Updated Dependencies
 
