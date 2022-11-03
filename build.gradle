@@ -29,7 +29,7 @@ dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.20'
     compileOnly 'xyz.theprogramsrc:simplecoreapi:0.4.0-SNAPSHOT'
 
-    compileOnly 'org.apache.logging.log4j:log4j-api:2.17.2'
+    compileOnly 'org.apache.logging.log4j:log4j-api:2.19.0'
     compileOnly 'org.apache.logging.log4j:log4j-core:2.19.0'
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
