@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.7.20'
+    id 'org.jetbrains.kotlin.jvm' version '1.8.0'
     id 'maven-publish'
     id 'com.github.johnrengelman.shadow' version '7.1.2'
     id 'net.kyori.blossom' version '1.2.0'
@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.20'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.0'
     compileOnly 'xyz.theprogramsrc:simplecoreapi:0.4.0-SNAPSHOT'
 
     compileOnly 'org.apache.logging.log4j:log4j-api:2.19.0'
