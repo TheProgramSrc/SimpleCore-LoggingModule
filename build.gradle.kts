@@ -88,8 +88,7 @@ tasks {
     }
 
     dokkaHtml {
-        val dokkaFolder = file(project.buildDir.absolutePath + "/dokka")
-        outputDirectory.set(dokkaFolder)
+        outputDirectory.set(file(project.buildDir.absolutePath + "/dokka"))
 
     }
 }
