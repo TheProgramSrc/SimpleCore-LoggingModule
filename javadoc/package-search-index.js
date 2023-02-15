@@ -1,0 +1,1 @@
+var packageSearchIndex = [{"l":"xyz.theprogramsrc.loggingmodule","url":"xyz/theprogramsrc/loggingmodule/package-summary.html"}, {"l":"xyz.theprogramsrc.loggingmodule.filter","url":"xyz/theprogramsrc/loggingmodule/filter/package-summary.html"}, {"l":"All packages","url":"index.html"}]
