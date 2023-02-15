@@ -1,3 +1,7 @@
+## v0.3.1 - Snapshot
+* Fix module.properties file
+* Update README.md
+
 ## v0.3.0 - Snapshot
 * Updated to gradle kotlin dsl
 * Added sonatype
