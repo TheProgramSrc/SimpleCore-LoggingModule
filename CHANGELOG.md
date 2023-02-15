@@ -1,3 +1,10 @@
+## v0.3.0 - Snapshot
+* Updated to gradle kotlin dsl
+* Added sonatype
+* Updated dependencies
+* Updated workflows
+* Added JitPack
+
 ## v0.2.2 - Snapshot
 * Added `Logger#debug` method
 * Added `Logger#severe(String, Exception)` method
