@@ -14,7 +14,7 @@ import org.apache.logging.log4j.message.Message
  * @param result The result to use if the filter matches
  * @param filteredStrings The strings that a message must contain to be filtered
  */
-open class LogFilter(val result: FilterResult = FilterResult.NEUTRAL, val filteredStrings: Array<String>): AbstractFilter() {
+open class LogFilter(private val result: FilterResult = FilterResult.NEUTRAL, private val filteredStrings: Array<String>): AbstractFilter() {
 
     /**
      * Extra requirements for a string filter to be matched
