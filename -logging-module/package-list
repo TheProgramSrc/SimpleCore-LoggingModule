@@ -5,6 +5,7 @@ $dokka.location:xyz.theprogramsrc.loggingmodule.filter/FilterResult.DENY///Point
 $dokka.location:xyz.theprogramsrc.loggingmodule.filter/FilterResult.NEUTRAL///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-logging-module/xyz.theprogramsrc.loggingmodule.filter/-filter-result/-n-e-u-t-r-a-l/index.html
 $dokka.location:xyz.theprogramsrc.loggingmodule.filter/FilterResult.NONE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-logging-module/xyz.theprogramsrc.loggingmodule.filter/-filter-result/-n-o-n-e/index.html
 $dokka.location:xyz.theprogramsrc.loggingmodule.filter/FilterResult///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-filter-result/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule.filter/FilterResult/entries/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-filter-result/entries.html
 $dokka.location:xyz.theprogramsrc.loggingmodule.filter/FilterResult/valueOf/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-filter-result/value-of.html
 $dokka.location:xyz.theprogramsrc.loggingmodule.filter/FilterResult/values/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-filter-result/values.html
 $dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/index.html
@@ -16,6 +17,11 @@ $dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/filter/#org.apa
 $dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/filter/#org.apache.logging.log4j.core.Logger?#org.apache.logging.log4j.Level?#org.apache.logging.log4j.Marker?#org.apache.logging.log4j.message.Message#kotlin.Throwable?/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/filter.html
 $dokka.location:xyz.theprogramsrc.loggingmodule.filter/LogFilter/register/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule.filter/-log-filter/register.html
 $dokka.location:xyz.theprogramsrc.loggingmodule////PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/FilesModule///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-files-module/index.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/FilesModule/FilesModule/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-files-module/-files-module.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/FilesModule/description/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-files-module/description.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/FilesModule/onDisable/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-files-module/on-disable.html
+$dokka.location:xyz.theprogramsrc.loggingmodule/FilesModule/onEnable/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-files-module/on-enable.html
 $dokka.location:xyz.theprogramsrc.loggingmodule/Logger///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/index.html
 $dokka.location:xyz.theprogramsrc.loggingmodule/Logger/Logger/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/-logger.html
 $dokka.location:xyz.theprogramsrc.loggingmodule/Logger/debug/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/debug.html
@@ -26,8 +32,6 @@ $dokka.location:xyz.theprogramsrc.loggingmodule/Logger/info/#kotlin.String/Point
 $dokka.location:xyz.theprogramsrc.loggingmodule/Logger/severe/#kotlin.String#java.lang.Exception/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/severe.html
 $dokka.location:xyz.theprogramsrc.loggingmodule/Logger/severe/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/severe.html
 $dokka.location:xyz.theprogramsrc.loggingmodule/Logger/warning/#kotlin.String/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-logger/warning.html
-$dokka.location:xyz.theprogramsrc.loggingmodule/Main///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-main/index.html
-$dokka.location:xyz.theprogramsrc.loggingmodule/Main/Main/#/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-main/-main.html
 $dokka.location:xyz.theprogramsrc.loggingmodule/Utils///PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-utils/index.html
 $dokka.location:xyz.theprogramsrc.loggingmodule/Utils/getStackTrace/#java.lang.Exception/PointingToDeclaration/-logging-module/xyz.theprogramsrc.loggingmodule/-utils/get-stack-trace.html
 xyz.theprogramsrc.loggingmodule
